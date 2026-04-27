@@ -1,0 +1,52 @@
+{
+  "name": "grepgoods",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "seed": "ts-node src/seed.ts",
+    "moderate": "ts-node src/moderation.ts",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasoncawood/grepgoods.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasoncawood/grepgoods/issues"
+  },
+  "homepage": "https://github.com/jasoncawood/grepgoods#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "@types/express": "^5.0.6",
+    "@types/helmet": "^4.0.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.6.0",
+    "@types/node-forge": "^1.3.14",
+    "@types/sqlite3": "^5.1.0",
+    "@types/supertest": "^7.2.0",
+    "jest": "^30.3.0",
+    "nock": "^14.0.13",
+    "supertest": "^7.2.2",
+    "ts-jest": "^29.4.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "bullmq": "^5.76.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "helmet": "^8.1.0",
+    "ioredis": "^5.10.1",
+    "node-forge": "^1.4.0",
+    "ollama": "^0.6.3",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^6.0.1"
+  }
+}

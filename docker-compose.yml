@@ -1,0 +1,26 @@
+services:
+  app:
+    build: .
+    network_mode: "host"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - DATABASE_PATH=/app/data/grepgoods.db
+      - PORT=3000
+      - OLLAMA_HOST=http://localhost:11434
+      - REDIS_HOST=localhost
+      - REDIS_PORT=6379
+    restart: always
+
+  redis:
+    image: redis:alpine
+    network_mode: "host"
+    restart: always
+
+  image-proxy:
+    image: openresty/openresty:alpine
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./nginx-proxy.conf:/etc/nginx/conf.d/default.conf:ro
+    restart: always

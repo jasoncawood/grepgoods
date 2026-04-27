@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | GrepGoods</title>
+    <style>
+        body { background: #0f172a; color: #f8fafc; font-family: system-ui, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem; }
+        h1, h2 { color: #38bdf8; }
+        a { color: #38bdf8; text-decoration: none; }
+        .back { margin-bottom: 2rem; display: block; }
+    </style>
+</head>
+<body>
+    <a href="/" class="back">← Back to Index</a>
+    <h1>Privacy Policy</h1>
+    <p>Last Updated: April 2026</p>
+
+    <h2>1. Data Ingestion</h2>
+    <p>GrepGoods operates as a passive index. We only store data from ActivityPub posts where our bot (<code>@market@grepgoods.space</code>) is explicitly mentioned. By mentioning the bot, you are requesting that your post be indexed in our public directory.</p>
+
+    <h2>2. Local AI Processing</h2>
+    <p>We use a <strong>local</strong> instance of Ollama to extract metadata (item name, price, hashtags). Unlike centralized services, your post content is never sent to third-party AI providers (like OpenAI or Google). All analysis happens on our own secure hardware.</p>
+
+    <h2>3. Image Proxy & Buyer Privacy</h2>
+    <p>To protect our visitors, all media from foreign servers is routed through our secure image proxy. This masks the visitor's IP address and browser fingerprint from the remote server where the image is hosted.</p>
+
+    <h2>4. Data Retention</h2>
+    <p>We do not "mirror" the Fediverse. We only store the minimal structured data needed for the marketplace index. When you reply with <code>#sold</code>, your listing is flagged as closed and is eventually purged from the public index.</p>
+
+    <h2>5. Rights</h2>
+    <p>As a decentralized user, you own your data. If you delete your original post on your home instance, we will make every effort to respect the Delete activity, though the most reliable way to remove a listing is via the <code>#sold</code> command.</p>
+</body>
+</html>
