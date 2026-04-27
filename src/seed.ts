@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { getDatabase } from './db';
 
 async function seed() {
